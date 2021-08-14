@@ -3,19 +3,21 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
   //Will hold random characters needed
-  var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_+=-"
+  var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_+=-";
   // set password length
   var length = document.getElementById("slider").value;
 
-  var password = ""
+  var password = "";
 
   //create for loop to choose password characters.
   //Math.floor will return the largest integer. Math.random will choose a number between 0 and 1, by multiplying it by the value length you will git a hole number,
   //and because index begins a 0, you will need to subtract by 1 to set everything back by one, otherwise you will never get 0 or you will get a index number that
   //is not in the array.
   for(var i = 0; i <= length; i++){
-    password = password + values.charAt(Math.floor(Math.random() * Math.floor(value.length - 1)));
+    password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
   }
+  //Add password to the textbox. What is seen in the box.
+  document.getElementById("password").value = password;
 }
 
 // Write password to the #password input
