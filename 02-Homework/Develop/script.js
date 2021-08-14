@@ -18,6 +18,7 @@ function generatePassword(){
   }
   //Add password to the textbox. What is seen in the box.
   document.getElementById("password").value = password;
+  passwordText.value = password;
 }
 
 // Write password to the #password input
@@ -31,4 +32,4 @@ function writePassword() {
 
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword);
