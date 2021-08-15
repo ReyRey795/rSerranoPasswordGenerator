@@ -23,7 +23,9 @@ function generatePassword(){
 
 //Password Criteria options &default
 
+
 // User selected criterias
+
 
 //Validity check
 
