@@ -21,6 +21,12 @@ function generatePassword(){
   passwordText = password;
 }
 
+//Password Criteria options &default
+
+// User selected criterias
+
+//Validity check
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", generatePassword);
 
