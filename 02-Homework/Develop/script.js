@@ -3,7 +3,13 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword(){
   //Will hold random characters needed
-  var values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789~!@#$%^&*()_+=-";
+  var values = {
+    upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    lowerCase: "abcdefghijklmnopqrstuvwxyz",
+    number: "0123456789",
+    symbol: "~!@#$%^&*()_+=-",
+  }
+  ;
   // set password length
   var lengthChart = document.getElementById("slider").value;
 
@@ -22,6 +28,8 @@ function generatePassword(){
 }
 
 //Password Criteria options &default
+
+function
 
 
 // User selected criterias
